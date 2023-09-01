@@ -1,0 +1,18 @@
+.users-pseudo-list {
+    color: var(--dark-blue);
+    margin-top: 3rem;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .user-pseudo,
+    .user-pseudo-exemple {
+      font-size: 1rem;
+    }
+    .iconeye,
+    .iconcross {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-top: 2.5rem;
+    }
+  }
+  
