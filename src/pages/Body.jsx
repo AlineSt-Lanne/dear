@@ -9,6 +9,7 @@ import GoodConduct from "../components/registration/GoodConduct";
 import Hello from "../components/registration/Hello";
 import Connection from "./Connection";
 import Bonjour from "../components/connection/Bonjour";
+import Home from "./Home";
 
 export default function Body() {
     return (
@@ -31,6 +32,7 @@ export default function Body() {
             />
             <Route path="/connection" element={<Connection />} />
             <Route path="/connection/bonjour" element={<Bonjour />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </Router>
       </div>
