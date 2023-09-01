@@ -7,6 +7,8 @@ import Registration from "./Registration";
 import Register from "./Register";
 import GoodConduct from "../components/registration/GoodConduct";
 import Hello from "../components/registration/Hello";
+import Connection from "./Connection";
+import Bonjour from "../components/connection/Bonjour";
 
 export default function Body() {
     return (
@@ -27,6 +29,8 @@ export default function Body() {
               path="/registration/register/goodconduct/hello"
               element={<Hello />}
             />
+            <Route path="/connection" element={<Connection />} />
+            <Route path="/connection/bonjour" element={<Bonjour />} />
           </Routes>
         </Router>
       </div>
