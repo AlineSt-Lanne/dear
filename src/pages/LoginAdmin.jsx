@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/LoginAdmin.css";
 import ButtonConnexion from "../components/admin/ButtonConnexion";
 import logoCircle from "../assets/logo-dear-rond.png";
@@ -30,7 +31,9 @@ function LoginAdmin() {
             placeholder="Mot de passe"
             />
           <div className="buttoncontinueadmin">
-            <ButtonConnexion style={{ cursor: "pointer" }} />
+            <Link to="/adminaccount">
+              <ButtonConnexion style={{ cursor: "pointer" }} />
+            </Link>
           </div>
         </form>
       </div>

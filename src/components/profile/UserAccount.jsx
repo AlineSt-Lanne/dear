@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle } from "react-icons/io";

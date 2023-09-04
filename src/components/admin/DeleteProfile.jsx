@@ -12,7 +12,7 @@ function DeleteProfile() {
         <h2 className="head-subtilte-deleteprofile">Suppression de profil</h2>
       </div>
       <div className="subtilte-deleteprofile">
-        <h1 className="subtilte-deleteprofile">Supprimer le profil ?</h1>
+        <h1 className="subtilte-deleteprofile">Supprimer le profil de "PowerAnanas35"</h1>
         <p className="subtilte-delete-profile">
           {" "}
           La suppression du compte est définitive.

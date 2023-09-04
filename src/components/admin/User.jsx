@@ -7,7 +7,7 @@ function User() {
   return (
     <div className="user-container">
       <div className="align-pseudo-pictos">
-        <div className="user-title">pseudo</div>
+        <div className="user-title">PowerAnanas35</div>
         <div className="pictos-list-user">
           <Link to="/useractivities">
             <img className="iconeye" src={iconeye} alt="icon-eye" />

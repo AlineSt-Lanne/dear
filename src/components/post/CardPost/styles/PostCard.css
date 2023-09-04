@@ -4,7 +4,7 @@
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 25vh;
+    height: 20vh;
     width: 95vw;
   }
   
@@ -45,16 +45,27 @@
   
   .footercard {
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
+    align-items: center;
     padding-top: 0.5rem;
   }
   
+  .icon-comment {
+    width: 8%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .postcard {
       width: 85vw;
     }
     .postcard * {
       font-size: 1rem;
+    }
+    .icon-comment {
+      width: 6%;
     }
   }
   
@@ -64,6 +75,9 @@
     }
     .postcard * {
       font-size: 1.1rem;
+    }
+    .icon-comment {
+      width: 7%;
     }
   }
   
