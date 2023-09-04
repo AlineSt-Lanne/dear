@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/PostText.css";
 import ButtonReturnGreen from "./ButtonReturnGreen";
 import ButtonPublierPost from "./ButtonPublierPost";
@@ -16,7 +17,15 @@ function PostText() {
           name="category"
           id="share-select"
           >
-          <option value="0">--Choisir une catégorie--</option>
+          <option value="choose-cat">--Choisir une catégorie--</option>
+          <option value="temoignages">--Témoignage--</option>
+          <option value="relation-sexuel">--Relation sexuel--</option>
+          <option value="bien-etre">--Bien-être sexuel--</option>
+          <option value="amour">--Amour--</option>
+          <option value="polyamour">--Polyamour--</option>
+          <option value="non-binaire">--Non-binaire--</option>
+          <option value="vulve">--Vulve--</option>
+          <option value="penis">--Pénis--</option>
         </select>
       </div>
       <div className="bloc-texte-post">
@@ -34,7 +43,9 @@ function PostText() {
         </form>
       </div>
       <div className="button-publier-post">
-        <ButtonPublierPost />
+        <Link to="/home">
+          <ButtonPublierPost style={{ cursor: "pointer" }}/>
+        </Link>
       </div>
     </div>
   );

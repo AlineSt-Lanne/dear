@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { BsListTask } from "react-icons/bs";
 import { FaUserFriends } from "react-icons/fa";
@@ -10,6 +11,12 @@ import "./styles/AdminAccount.css";
 import Logout from "../profile/Logout";
 
 function AdminAccount() {
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
   return (
     <div className="admin-account-page">
       <div className="admin-top">
@@ -32,8 +39,9 @@ function AdminAccount() {
               <h3>Le fil d'actualités </h3>
               <button
                 type="button"
-                className="tabs"
+                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                 style={{ cursor: "pointer" }}
+                onClick={() => toggleTab(1)}
               >
                 <IoIosArrowDroprightCircle className="arrow-admin" />
               </button>
@@ -43,8 +51,9 @@ function AdminAccount() {
               <h3>Les utilisateurs</h3>
               <button
                 type="button"
-                className="tabs"
+                className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                 style={{ cursor: "pointer" }}
+                onClick={() => toggleTab(2)}
               >
                 <IoIosArrowDroprightCircle className="arrow-admin" />
               </button>
@@ -55,9 +64,27 @@ function AdminAccount() {
           </div>
         </div>
         <div className="content-tabs">
+          <div
+            className={
+              toggleState === 1 ? "content  active-content" : "content"
+            }
+          >
             <FilActu />
+          </div>
+          <div
+            className={
+              toggleState === 2 ? "content  active-content" : "content"
+            }
+          >
             <Users />
+          </div>
+          <div
+            className={
+              toggleState === 3 ? "content  active-content" : "content"
+            }
+          >
             <ManageFaCul />
+          </div>
         </div>
       </div>
     </div>

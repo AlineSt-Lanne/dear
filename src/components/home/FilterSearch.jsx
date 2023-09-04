@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/FilterSearch.css";
 import logosearch from "../../assets/search.png";
-import NavFilterPub from "./NavFilterPub";
+import filter from "../../assets/filter-blue.png";
 
 function FilterSearch() {
   return (
@@ -18,7 +18,13 @@ function FilterSearch() {
           <img src={logosearch} className="logosearch" alt="logosearch" />
         </div>
         <div className="logofilter">
-          <NavFilterPub />
+          <button
+            className="navfilter"
+            type="button"
+            style={{ cursor: "pointer" }}
+          >
+            <img src={filter} className="logofilter" alt="filter" />
+          </button>
         </div>
       </div>
     </div>

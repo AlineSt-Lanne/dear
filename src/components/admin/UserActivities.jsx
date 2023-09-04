@@ -13,7 +13,7 @@ function UserActivities() {
         <h2 className="head-subtilte-userpageactivities">Activités</h2>
       </div>
       <div className="subtilte-userpageacitivities">
-        <h1 className="subtilte-userpage">Toute l'activité de :</h1>
+        <h1 className="subtilte-userpage">Toute l'activité de PowerAnanas35 :</h1>
       </div>
       <div className="buttons-userpageacitivities">
         <ButtonPublications />

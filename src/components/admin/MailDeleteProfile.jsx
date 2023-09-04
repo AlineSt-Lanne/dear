@@ -1,9 +1,18 @@
+import React, { useState } from "react";
 import ButtonReturnPurple from "./ButtonReturnPurple";
 import ButtonMailSend from "./ButtonMailSend";
 import MessageMailDelete from "./MessageMailDelete";
 import "./styles/MailDeleteProfile.css";
 
 function MailDeleteProfile() {
+  const [message, setMessage] = useState("");
+  const [isAdminClick, setIsAdminClick] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsAdminClick(!isAdminClick);
+  };
+
   return (
     <div className="container-page-mail-delete-profile">
       <div className="maildeleteprofile">
@@ -23,13 +32,15 @@ function MailDeleteProfile() {
               name="content"
               id="content"
               placeholder="Bonjour c'est la team DEAR,"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </label>
         </form>
       </div>
       <div className="button-maildeleteprofile">
-        <ButtonMailSend />
-        <MessageMailDelete />
+        <ButtonMailSend handleClick={handleClick} />
+        {isAdminClick && <MessageMailDelete />}
       </div>
     </div>
   );

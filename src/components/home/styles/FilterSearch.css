@@ -2,6 +2,7 @@
     height: 1.3rem;
     width: 1.3rem;
     margin-right: 1rem;
+    background-color: white;
   }
   
   .logosearch {
@@ -32,6 +33,18 @@
     font-size: 0.8rem;
     border-radius: 5rem;
     border: 1px solid #bdc3cf;
+  }
+
+  #navfilter * {
+    width: 6vw;
+    max-width: 30px;
+    margin-bottom: 0.5rem;
+    background-color: white;
+  }
+  
+  .navfilter {
+    background-color: white;
+    border: none;
   }
   
   @media screen and (min-width: 768px) and (max-width: 1024px) {

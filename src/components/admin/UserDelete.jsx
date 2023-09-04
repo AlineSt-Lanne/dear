@@ -14,7 +14,7 @@ function UserDelete() {
         <h2 className="head-subtilte-userpageactivities">Suppression profil</h2>
       </div>
       <div className="subtilte-useruserpageadelete">
-        <h1 className="subtilte-userpage-delete">Supprimer le profil :</h1>
+        <h1 className="subtilte-userpage-delete">Supprimer le profil de "PowerAnanas35":</h1>
         <p className="subtilte-userpage-delete">
           {" "}
           Le profil sera définitivement supprimé.

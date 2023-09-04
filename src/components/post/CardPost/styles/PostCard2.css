@@ -1,10 +1,10 @@
-.postcard {
+.postcard2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 25vh;
+    height: 20vh;
     width: 95vw;
   }
   
@@ -12,25 +12,25 @@
     font-size: 0.5rem;
   }
   
-  .postcard * {
+  .postcard2 * {
     font-size: 0.8rem;
     font-family: var(--font);
   }
   
-  .headercard {
+  .headercard2 {
     display: flex;
     justify-content: space-around;
     padding: 0.5rem;
-    background-color: var(--light-purple);
+    background-color: var(--mustard);
   }
   
   .headercard h2 {
     font-weight: 600;
   }
   
-  .contentcard {
+  .contentcard2 {
     height: 70%;
-    background-color: var(--light-purple);
+    background-color: var(--mustard);
     display: flex;
     text-align: justify;
     justify-content: center;
@@ -39,7 +39,7 @@
     color: white;
   }
   
-  .contentcard * {
+  .contentcard2 * {
     font-weight: 300;
   }
   
@@ -57,9 +57,11 @@
   }
   
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .postcard {
-      height: 15vh;
-      width: 45vw;
+    .postcard2 {
+      width: 85vw;
+    }
+    .postcard2 * {
+      font-size: 1rem;
     }
     .icon-comment {
       width: 6%;
@@ -67,11 +69,10 @@
   }
   
   @media screen and (min-width: 1024px) {
-    .postcard {
-      height: 20vh;
+    .postcard2 {
       width: 60vw;
     }
-    .postcard * {
+    .postcard2 * {
       font-size: 1.1rem;
     }
     .icon-comment {

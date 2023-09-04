@@ -1,6 +1,5 @@
 import "./styles/NavFilterPub.css";
 import filter from "../../assets/filter-blue.png";
-import PostCard from "../post/CardPost/PostCard";
 
 export default function NavFilterPub() {
   return (
@@ -24,7 +23,6 @@ export default function NavFilterPub() {
           >
             VALIDER LES FILTRES
           </button>
-              <PostCard />
         </div>
       </div>
     </nav>
